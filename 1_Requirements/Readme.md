@@ -1,12 +1,14 @@
 <<<<<<< HEAD
+# Data Merge and Analysis
 # Requirements
-## Introduction
-    -Data Merging and analysis is used to manipulate data and display visual representation of the statistical analysis performed. 
-
-    -Marks or score analysis is not only carried out in educational institutions as a metric for evaluation but also in other places where keeping a score is relevant. 
-
-    -E-mailers are used to update concerned people by triggering e-mails after successful completion of the required manipulation.
-
+# Need
+ # Introduction
+ -Data Merging and analysis is used to manipulate data and display visual representation of the statistical analysis performed. 
+ -Marks or score analysis is not only carried out in educational institutions as a metric for evaluation but also in other places where keeping a score is relevant. 
+ -E-mailers are used to update concerned people by triggering e-mails after successful completion of the required manipulation.
+   # HISTORY: 
+   -The history of data analytics goes as far as the 19th century  
+   -The measurement of assembly lines by Henry Ford was also designed based on the analytics 
 ## Research
 ![Description](Link to Pic)
 -- Content 
