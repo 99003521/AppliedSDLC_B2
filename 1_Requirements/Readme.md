@@ -2,7 +2,7 @@
 # Data Merge and Analysis
 # Requirements
 # Need
-# Introduction
+ # Introduction
  - Data Merging and analysis is used to manipulate data and display visual representation of the statistical analysis performed.
  - Marks or score analysis is not only carried out in educational institutions as a metric for evaluation but also in other places where keeping a score is relevant. 
  - E-mailers are used to update concerned people by triggering e-mails after successful completion of the required manipulation.
@@ -17,6 +17,12 @@
  - Well known statistical analysis tools such as IBM SPSS Statistics starts from 3 Lakhs and can go all way up to 17 Lakhs. 
  - Stat soft’s product Statistica also prices from 1.25 Lakhs to 2 Lakhs. 
  - The cheapest of the best tools comes around to 6,000 dollars a year. 
+# Technical Analysis
+ - All statistical analytical tools are developed within an organization and released for commercial use.  
+ - The statistical Analysis tool developed by IBM is considered the best. 
+ - Pandas is used for the analysis and manipulation of data since Python’s in-built library statistics cannot be relied for huge datasets. 
+ - Matplotlib is used for the visualization of manipulated data. 
+ - Plotly is used for data representation after manipulation. 
 ## Research
 ![Description](Link to Pic)
 -- Content 
