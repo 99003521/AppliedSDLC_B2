@@ -3,7 +3,7 @@
 # Requirements
 # Need
 # Introduction
- -Data Merging and analysis is used to manipulate data and display visual representation of the statistical analysis performed. 
+ -Data Merging and analysis is used to manipulate data and display visual representation of the statistical analysis performed.
  -Marks or score analysis is not only carried out in educational institutions as a metric for evaluation but also in other places where keeping a score is relevant. 
  -E-mailers are used to update concerned people by triggering e-mails after successful completion of the required manipulation.
    # HISTORY: 
