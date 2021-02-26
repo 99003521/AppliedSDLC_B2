@@ -1,5 +1,5 @@
 # SDLC Activity Based Learning
-
+# Marks Analyzer
 Visit [Pages for Report -optional](using github.io option)
 
 Build | Cppcheck | Unity | [Git Inspector](using github.io option)
@@ -19,8 +19,9 @@ Folder             | Description
 
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
+`99003521` | Aman Kalaskar  | Feature A, B etc    | X No     | X No   |X No   |X No     
+`99003554` | Ragul Krishna P  | Feature C, D etc    | X No     | X No   |X No   |X No     
+`99003605` | Grace Joseph  | Feature C, D etc    | X No     | X No   |X No   |X No  
 
 ## Challenges Faced and How Was It Overcome
 
