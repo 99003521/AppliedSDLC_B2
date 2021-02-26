@@ -1,7 +1,11 @@
 <<<<<<< HEAD
 # Requirements
 ## Introduction
- --- TBD 
+    -Data Merging and analysis is used to manipulate data and display visual representation of the statistical analysis performed. 
+
+    -Marks or score analysis is not only carried out in educational institutions as a metric for evaluation but also in other places where keeping a score is relevant. 
+
+    -E-mailers are used to update concerned people by triggering e-mails after successful completion of the required manipulation.
 
 ## Research
 ![Description](Link to Pic)
@@ -16,26 +20,25 @@
 
 # 4W and 1H
 
-- What:
+# What:
 
- The data analysis process, or alternately, data analysis steps, involves gathering all the information, processing it, exploring the data, and using it for visualization.
+ - The data analysis process, or alternately, data analysis steps, involves gathering all the information, processing it, exploring the data, and using it for visualization.
 
-- Why:
+# Why:
 
-Data analysis helps businesses improve their products and services. Can detect the strengths and weaknesses.
+- Data analysis helps businesses improve their products and services. Can detect the strengths and weaknesses.
 
-- When:
+# When:
 
- When a problem with a lot of complex operations and large number of data in unordered format is present.
+ - When a problem with a lot of complex operations and large number of data in unordered format is present.
 
-- Where:
+# Where:
 
-Data Scientists and Analysts use data analytics techniques in their research, and businesses also use it to inform their decisions.
+- Data Scientists and Analysts use data analytics techniques in their research, and businesses also use it to inform their decisions.
 
-- How:
- It is a way of thinking and resolving the problems. Includes setting goals, collecting, cleaning, and analyzing data, then visualizing it.
+# How:
+ - It is a way of thinking and resolving the problems. Includes setting goals, collecting, cleaning, and analyzing data, then visualizing it.
 
-**TBD**
 
 # Detail requirements
 ## High Level Requirements:
