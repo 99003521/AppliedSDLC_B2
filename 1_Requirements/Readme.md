@@ -12,39 +12,49 @@
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![SWOT](swot.png)
 
-# 4W&#39;s and 1&#39;H
+# 4W and 1H
 
-## Who:
+- What:
 
-**TBD**
+ The data analysis process, or alternately, data analysis steps, involves gathering all the information, processing it, exploring the data, and using it for visualization.
 
-## What:
+- Why:
 
-**TBD**
+Data analysis helps businesses improve their products and services. Can detect the strengths and weaknesses.
 
-## When:
+- When:
 
-**TBD**
+ When a problem with a lot of complex operations and large number of data in unordered format is present.
 
-## Where:
+- Where:
 
-**TBD**
+Data Scientists and Analysts use data analytics techniques in their research, and businesses also use it to inform their decisions.
 
-## How:
+- How:
+ It is a way of thinking and resolving the problems. Includes setting goals, collecting, cleaning, and analyzing data, then visualizing it.
 
 **TBD**
 
 # Detail requirements
 ## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
+| **ID** | **Description** |
+| --- | --- |
+| HL1 | General Statistics  |
+| HL2 | Student based data |
+| HL3 |Auto Emails about the marks |
 
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
-=======
+| **ID** | **Description** |
+| --- | --- |
+| L1 | Marks for each student in every subject | 
+| L2 | Spider chart for student |
+| L3 | Spider chart for overall passed students in respective subjects |
+| L4 | Merged document containing stats and visualization of data |
+| L5 | Email alerts on low marks to student and teacher |
+| L6 |Email alerts on demand |
 
->>>>>>> 5d165d58a0fda3f5fb234f5b02769745e24fb757
+
