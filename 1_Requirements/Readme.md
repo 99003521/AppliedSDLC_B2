@@ -17,42 +17,36 @@
  - Well known statistical analysis tools such as IBM SPSS Statistics starts from 3 Lakhs and can go all way up to 17 Lakhs. 
  - Stat soft’s product Statistica also prices from 1.25 Lakhs to 2 Lakhs. 
  - The cheapest of the best tools comes around to 6,000 dollars a year. 
+ - Reference - https://www.jigsawacademy.com/pricing-for-analytical-tools-in-india/ 
 # Technical Analysis
  - All statistical analytical tools are developed within an organization and released for commercial use.  
  - The statistical Analysis tool developed by IBM is considered the best. 
  - Pandas is used for the analysis and manipulation of data since Python’s in-built library statistics cannot be relied for huge datasets. 
  - Matplotlib is used for the visualization of manipulated data. 
  - Plotly is used for data representation after manipulation. 
-## Research
-![Description](Link to Pic)
--- Content 
-## Cost and Features
-![Description](Link to Pic)
--- Content 
-## Defining Our System
-    -- TBD
 ## SWOT ANALYSIS
 ![SWOT](swot.png)
 
 # 4W and 1H
 
-# What:
+ # What:
 
- - The data analysis process, or alternately, data analysis steps, involves gathering all the information, processing it, exploring the data, and using it for visualization.
+  - The data analysis process, or alternately, data analysis steps, involves gathering all the information, processing it, exploring the data, and using it for visualization.
 
-# Why:
+ # Why:
 
-- Data analysis helps businesses improve their products and services. Can detect the strengths and weaknesses.
+ - Data analysis helps businesses improve their products and services. Can detect the strengths and weaknesses.
 
-# When:
+ # When:
 
- - When a problem with a lot of complex operations and large number of data in unordered format is present.
+  - When a problem with a lot of complex operations and large number of data in unordered format is present.
 
-# Where:
+ # Where:
 
-- Data Scientists and Analysts use data analytics techniques in their research, and businesses also use it to inform their decisions.
+ - Data Scientists and Analysts use data analytics techniques in their research, and businesses also use it to inform their decisions.
 
 # How:
+
  - It is a way of thinking and resolving the problems. Includes setting goals, collecting, cleaning, and analyzing data, then visualizing it.
 
 
