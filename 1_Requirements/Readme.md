@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Requirements
 ## Introduction
  --- TBD 
@@ -44,3 +45,6 @@
 ##  Low level Requirements:
 --- TBD in Tabular Format 
 -- ID | Description | Status (Implemented/Future)
+=======
+
+>>>>>>> 5d165d58a0fda3f5fb234f5b02769745e24fb757
