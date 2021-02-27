@@ -1,3 +1,6 @@
+# import random
+# for i in range(10):
+#   print(random.randint(40,100))
 import plotly.graph_objects as go
 
 def display(data):
@@ -20,3 +23,9 @@ def display(data):
 
 data=[5,2,3,4,5]
 display(data)
+
+
+
+
+
+
