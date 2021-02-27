@@ -31,6 +31,7 @@
  - Pandas is used for the analysis and manipulation of data since Python’s in-built library statistics cannot be relied for huge datasets. 
  - Matplotlib is used for the visualization of manipulated data. 
  - Plotly is used for data representation after manipulation. 
+ - smtplib is used to send e-mails to the stakeholders.
 ## SWOT ANALYSIS
 ![SWOT](swot.png)
 
