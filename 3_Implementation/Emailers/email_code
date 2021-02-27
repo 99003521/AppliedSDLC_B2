@@ -1,0 +1,20 @@
+import smtplib
+from email.message import EmailMessage
+
+EMAIL_ADDRESS = 'marveldc144@gmail.com'
+EMAIL_PASSWORD = 'Zxcv123.'
+
+
+msg = EmailMessage()
+msg['Subject'] = 'This is my email with PDF attachment'
+msg['From'] = EMAIL_ADDRESS 
+msg['To'] = EMAIL_ADDRESS 
+msg.set_content('See below')
+
+
+with open('Example.pdf', 'rb') as pdf:
+    msg.add_attachment(pdf.read(), maintype='application', subtype='octet-stream', filename=pdf.name)
+    
+with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+    smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD) 
+    smtp.send_message(msg)
