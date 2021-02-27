@@ -7,8 +7,15 @@
  - Marks or score analysis is not only carried out in educational institutions as a metric for evaluation but also in other places where keeping a score is relevant. 
  - E-mailers are used to update concerned people by triggering e-mails after successful completion of the required manipulation.
    # HISTORY: 
-   - The history of data analytics goes as far as the 19th century  
-   - The measurement of assembly lines by Henry Ford was also designed based on the analytics 
+   - The history of data analytics goes as far as the 19th century.  
+   - The measurement of assembly lines by Henry Ford was also designed based on the analytics.
+   - In the 1960s, the field of data analytics went through huge development as Computers started evovling as decision-making support systems.
+   - In recent times, after the introduction of Big Data, Data analytics now includes research, discovery and interpretatation of patterns within data.
+   # TRENDS:
+   - Gather hidden insights.
+   - Generate reports.
+   - Perform Market Analysis.
+   - Improve Business requirements
 # Feasibility Analysis
  # Market Analysis
  - Score Analysis can be performed to visualize methods of how a range of scores can be projected. 
