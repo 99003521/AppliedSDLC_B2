@@ -22,11 +22,23 @@ def display(id,data):
     ),
     showlegend=False
   )
-  fig.write_image("results/"+str(id)+".png")
+  fig.write_image("results/SpiderChart/"+str(id)+".png")
+
+def mergeMarks(subName):
+  if i[0] in subName.values:
+    temp_rows= [list(row) for row in subName.values]
+    for row in temp_rows:
+      if i[0] in row:
+        t=temp_rows.index(row)
+        break
+    f.write(str(subName.values[t][3])+",")
+  else: 
+    f.write("NA,")
 
 #create a file for results
 if not os.path.exists('results'):
     os.makedirs('results')
+    os.mkdir('results/SpiderChart')
 
 
 ComputerMarks = open('dataset/Computer.csv', 'r')
@@ -44,84 +56,35 @@ for i in list_of_rows:
     # print(j)
     f.write(str(j).strip()+",")
 
-  subPhy = pd.read_csv('dataset/Physics.csv', delimiter=',')  
-  if i[0] in subPhy.values:
-    temp_rows= [list(row) for row in subPhy.values]
-    for row in temp_rows:
-      if i[0] in row:
-        t=temp_rows.index(row)
-        break
-    f.write(str(subPhy.values[t][3])+",")
-  else: 
-    f.write("NA,")
+  subPhy = pd.read_csv('dataset/Physics.csv', delimiter=',')
+  mergeMarks(subPhy)
+  
   subChe = pd.read_csv('dataset/Chemistry.csv', delimiter=',')  
-  if i[0] in subChe.values:
-    temp_rows= [list(row) for row in subChe.values]
-    for row in temp_rows:
-      if i[0] in row:
-        t=temp_rows.index(row)
-        break
-    f.write(str(subChe.values[t][3])+",")
-  else:
-    f.write("NA,")
+  mergeMarks(subChe)
 
   subBio = pd.read_csv('dataset/Biology.csv', delimiter=',')  
-  if i[0] in subBio.values:
-    temp_rows= [list(row) for row in subBio.values]
-    for row in temp_rows:
-      if i[0] in row:
-        t=temp_rows.index(row)
-        break
-    f.write(str(subBio.values[t][3])+",")
-  else:
-    f.write("NA,")
+  mergeMarks(subBio)
   
   subMat = pd.read_csv('dataset/Maths.csv', delimiter=',')  
-  if i[0] in subMat.values:
-    temp_rows= [list(row) for row in subMat.values]
-    for row in temp_rows:
-      if i[0] in row:
-        t=temp_rows.index(row)
-        break
-    f.write(str(subMat.values[t][3])+",")
-  else:
-    f.write("NA,")
-
+  mergeMarks(subMat)
 
   subPy = pd.read_csv('dataset/Python.csv', delimiter=',')  
-  if i[0] in subPy.values:
-    temp_rows= [list(row) for row in subPy.values]
-    for row in temp_rows:
-      if i[0] in row:
-        t=temp_rows.index(row)
-        break
-    f.write(str(subPy.values[t][3])+",")
-  else:
-    f.write("NA,")
+  mergeMarks(subPy)
     
   f.write("\n")
 f.close()
 
-
 data = pd.read_csv('results/studentMarks.csv', index_col=False)
 final = pd.DataFrame(data)
 
-# for i in range(final.shape[0]):
-#   display(final.iloc[i,0],final.iloc[i,3:8])
-
-# print(final["Physics"].mean())
-print(final.iloc[0,3:7].mean())
-print(final.iloc[0,0])
-# print(final.shape[0])
-# display(final.iloc[0,0],final.iloc[0,3:8])
 for i in range(final.shape[0]):
-  display(final.iloc[i,0],final.iloc[i,3:8])
-  
-# df["Average"] = final.iloc[0,3:final.shape[1]].mean()
-# print(df)
+  display(final.iloc[i,0],final.iloc[i,3:9])
+
 col = final.loc[: , "Computer":"Python"]
 final['Average'] = col.mean(axis=1)
+# final = final.sort_values(by = 'studentID')
 print(final)
+
 final.to_csv("results/studentMarks.csv")
 
 teacher = {'Teacher_Name':['Badri', 'Prithvi', 'Bharat', 'Ajay','Abhishek','Vivek'],
@@ -134,7 +97,10 @@ subStats = pd.DataFrame(teacher)
 # print(final.loc[: , "Computer":"Maths"].mean())
 
 subStats["Average"] = list(final.loc[: , "Computer":"Python"].mean())
-
-print(final[['Computer']].idxmax())
+subStats["Max"] = list(final.loc[: , "Computer":"Python"].max())
+subStats["Min"] = list(final.loc[: , "Computer":"Python"].min())
+subStats["Total"] = list(final.loc[: , "Computer":"Python"].sum())
+# print(final.loc[final[['Computer']].idxmax()],"studentID")
 # print(final.index[final["Computer"]])
 print(subStats)
+subStats.to_csv('results/SubjectStats.csv')
