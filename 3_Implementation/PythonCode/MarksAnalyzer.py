@@ -11,8 +11,7 @@ import os
 def display(id,data):
   fig = go.Figure(data=go.Scatterpolar(
     r=data,
-    theta=['Computer','Physics','Chemistry', 'Biology',
-            'Maths'],
+    theta=['Computer','Physics','Chemistry', 'Biology','Maths'],
     fill='toself'
   ))
   fig.update_layout(
@@ -24,8 +23,6 @@ def display(id,data):
     showlegend=False
   )
   fig.write_image("results/"+str(id)+".png")
-data=[5,2,3,4,5]
-# display(data)
 
 #create a file for results
 if not os.path.exists('results'):
@@ -103,8 +100,13 @@ print(final)
 print(final.iloc[0,3:7].mean())
 print(final.iloc[0,0])
 # print(final.shape[0])
-display(final.iloc[0,0],final.iloc[0,3:7])
+# display(final.iloc[0,0],final.iloc[0,3:8])
 for i in range(final.shape[0]):
-  display(final.iloc[i,0],final.iloc[i,3:7])
+  display(final.iloc[i,0],final.iloc[i,3:8])
 # df["Average"] = final.iloc[0,3:final.shape[1]].mean()
 # print(df)
+col = final.loc[: , "Computer":"Maths"]
+final['Average'] = col.mean(axis=1)
+print(final)
+final.to_csv("results/studentMarks.csv")
+
