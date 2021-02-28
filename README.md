@@ -2,9 +2,9 @@
 # Marks Analyzer
 Visit [Pages for Report -optional](using github.io option)
 
-Build | Cppcheck | Unity | [Git Inspector](using github.io option)
+[Git Inspector](using github.io option)
 ------|----------|-------|--------------
-![C/C++ CI](Badgelink) | ![Cppcheck](Badgelink) | ![Unity - Unit Testing](Badgelink) | ![Git Inspector](Badgelink)
+![Git Inspector](Badgelink)
 
 
 ## Folder Structure
@@ -26,9 +26,7 @@ PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 ## Challenges Faced and How Was It Overcome
 
 1. In the Consolidation process we were unable to append the average of the modules and for resolving it we imported pandas for converting it to dataframe
-2. While working on the Email part we were facing 
-3. ...
-4. ...
+2. While working on the Email part we were facing server error
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
