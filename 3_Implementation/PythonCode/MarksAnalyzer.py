@@ -37,7 +37,7 @@ df = pd.read_csv('dataset/Computer.csv',)
 list_of_rows = [list(row) for row in df.values]
 # print(df)
 f = open("results/studentMarks.csv", "w")
-f.write("studentID,studentNAME,studentEMAIL,Computer,Physics,Chemistry,Biology,Maths,Average\n")
+f.write("studentID,studentNAME,studentEMAIL,Computer,Physics,Chemistry,Biology,Maths,Python,Average\n")
 for i in list_of_rows:
   # print(i)
   for j in i:
