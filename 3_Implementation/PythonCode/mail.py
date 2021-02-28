@@ -55,3 +55,19 @@ Regards,
  # attach the instance 'part' to instance 'message'
 
     message.attach(part)
+
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+
+    s.starttls()
+
+    s.login(sender_address, sender_pass)
+
+    text = message.as_string()
+
+    s.sendmail(sender_address, reciver_mail, text)
+
+    s.quit()
+
+ 
+
+ print('Mail Sent')
