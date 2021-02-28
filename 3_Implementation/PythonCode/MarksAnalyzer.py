@@ -11,7 +11,7 @@ import os
 def display(id,data):
   fig = go.Figure(data=go.Scatterpolar(
     r=data,
-    theta=['Computer','Physics','Chemistry', 'Biology','Maths'],
+    theta=['Computer','Physics','Chemistry', 'Biology','Maths','Python'],
     fill='toself'
   ))
   fig.update_layout(
@@ -55,7 +55,7 @@ for i in list_of_rows:
   else: 
     f.write("NA,")
 
-  subChe = pd.read_csv('dataset\Chemisty.csv', delimiter=',')  
+  subChe = pd.read_csv('dataset/Chemistry.csv', delimiter=',')  
   if i[0] in subChe.values:
     temp_rows= [list(row) for row in subChe.values]
     for row in temp_rows:
@@ -88,8 +88,6 @@ for i in list_of_rows:
   else:
     f.write("NA,")
 
-  f.write("\n")
-f.close()
 
   subPy = pd.read_csv('dataset/Python.csv', delimiter=',')  
   if i[0] in subPy.values:
@@ -101,6 +99,9 @@ f.close()
     f.write(str(subPy.values[t][3])+",")
   else:
     f.write("NA,")
+    
+  f.write("\n")
+f.close()
 
 
 data = pd.read_csv('results/studentMarks.csv', index_col=False)
@@ -117,7 +118,7 @@ for i in range(final.shape[0]):
   
 # df["Average"] = final.iloc[0,3:final.shape[1]].mean()
 # print(df)
-col = final.loc[: , "Computer":"Maths"]
+col = final.loc[: , "Computer":"Python"]
 final['Average'] = col.mean(axis=1)
 print(final)
 final.to_csv("results/studentMarks.csv")
