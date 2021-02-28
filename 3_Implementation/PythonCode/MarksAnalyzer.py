@@ -11,7 +11,7 @@ import os
 def display(id,data):
   fig = go.Figure(data=go.Scatterpolar(
     r=data,
-    theta=['Computer','Physics','Chemistry', 'Biology','Maths'],
+    theta=['Computer','Physics','Chemistry', 'Biology','Maths','Python'],
     fill='toself'
   ))
   fig.update_layout(
@@ -37,7 +37,7 @@ df = pd.read_csv('dataset/Computer.csv',)
 list_of_rows = [list(row) for row in df.values]
 # print(df)
 f = open("results/studentMarks.csv", "w")
-f.write("studentID,studentNAME,studentEMAIL,Computer,Physics,Chemistry,Biology,Maths,Average\n")
+f.write("studentID,studentNAME,studentEMAIL,Computer,Physics,Chemistry,Biology,Maths,Python,Average\n")
 for i in list_of_rows:
   # print(i)
   for j in i:
@@ -54,8 +54,7 @@ for i in list_of_rows:
     f.write(str(subPhy.values[t][3])+",")
   else: 
     f.write("NA,")
-
-  subChe = pd.read_csv('dataset/Chemisty.csv', delimiter=',')  
+  subChe = pd.read_csv('dataset/Chemistry.csv', delimiter=',')  
   if i[0] in subChe.values:
     temp_rows= [list(row) for row in subChe.values]
     for row in temp_rows:
@@ -88,6 +87,18 @@ for i in list_of_rows:
   else:
     f.write("NA,")
 
+
+  subPy = pd.read_csv('dataset/Python.csv', delimiter=',')  
+  if i[0] in subPy.values:
+    temp_rows= [list(row) for row in subPy.values]
+    for row in temp_rows:
+      if i[0] in row:
+        t=temp_rows.index(row)
+        break
+    f.write(str(subPy.values[t][3])+",")
+  else:
+    f.write("NA,")
+    
   f.write("\n")
 f.close()
 
@@ -98,22 +109,32 @@ final = pd.DataFrame(data)
 # for i in range(final.shape[0]):
 #   display(final.iloc[i,0],final.iloc[i,3:8])
 
-col = final.loc[: , "Computer":"Maths"]
+# print(final["Physics"].mean())
+print(final.iloc[0,3:7].mean())
+print(final.iloc[0,0])
+# print(final.shape[0])
+# display(final.iloc[0,0],final.iloc[0,3:8])
+for i in range(final.shape[0]):
+  display(final.iloc[i,0],final.iloc[i,3:8])
+  
+# df["Average"] = final.iloc[0,3:final.shape[1]].mean()
+# print(df)
+col = final.loc[: , "Computer":"Python"]
 final['Average'] = col.mean(axis=1)
 print(final)
 final.to_csv("results/studentMarks.csv")
 
-teacher = {'Teacher_Name':['Badri', 'Prithvi', 'Bharat', 'Ajay','Abhishek'],
-           'Teacher_Email':['badri@ltts.com', 'prithvi@ltts.com', 'Bharat@ltts.com', 'ajay@ltts.com', 'abhishek@ltts.com'],
-           'Subject':['Computer','Physics',  'Chemistry','Biology','Maths']}
+teacher = {'Teacher_Name':['Badri', 'Prithvi', 'Bharat', 'Ajay','Abhishek','Vivek'],
+           'Teacher_Email':['badri@ltts.com', 'prithvi@ltts.com', 'Bharat@ltts.com', 'ajay@ltts.com', 'abhishek@ltts.com','vivek@ltts.com'],
+           'Subject':['Computer','Physics',  'Chemistry','Biology','Maths','Python']}
 
 subStats = pd.DataFrame(teacher)
 
 
 # print(final.loc[: , "Computer":"Maths"].mean())
 
-subStats["Average"] = list(final.loc[: , "Computer":"Maths"].mean())
+subStats["Average"] = list(final.loc[: , "Computer":"Python"].mean())
 
 print(final[['Computer']].idxmax())
-print(final.index[final["Computer"]])
+# print(final.index[final["Computer"]])
 print(subStats)

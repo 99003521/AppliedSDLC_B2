@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Data Merge and Analysis
 # Requirements
 # Need
