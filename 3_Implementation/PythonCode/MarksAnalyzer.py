@@ -55,7 +55,7 @@ for i in list_of_rows:
   else: 
     f.write("NA,")
 
-  subChe = pd.read_csv('dataset\Chemisty.csv', delimiter=',')  
+  subChe = pd.read_csv('dataset/Chemisty.csv', delimiter=',')  
   if i[0] in subChe.values:
     temp_rows= [list(row) for row in subChe.values]
     for row in temp_rows:
@@ -92,21 +92,28 @@ for i in list_of_rows:
 f.close()
 
 
-
 data = pd.read_csv('results/studentMarks.csv', index_col=False)
 final = pd.DataFrame(data)
-print(final)
-# print(final["Physics"].mean())
-print(final.iloc[0,3:7].mean())
-print(final.iloc[0,0])
-# print(final.shape[0])
-# display(final.iloc[0,0],final.iloc[0,3:8])
-for i in range(final.shape[0]):
-  display(final.iloc[i,0],final.iloc[i,3:8])
-# df["Average"] = final.iloc[0,3:final.shape[1]].mean()
-# print(df)
+
+# for i in range(final.shape[0]):
+#   display(final.iloc[i,0],final.iloc[i,3:8])
+
 col = final.loc[: , "Computer":"Maths"]
 final['Average'] = col.mean(axis=1)
 print(final)
 final.to_csv("results/studentMarks.csv")
 
+teacher = {'Teacher_Name':['Badri', 'Prithvi', 'Bharat', 'Ajay','Abhishek'],
+           'Teacher_Email':['badri@ltts.com', 'prithvi@ltts.com', 'Bharat@ltts.com', 'ajay@ltts.com', 'abhishek@ltts.com'],
+           'Subject':['Computer','Physics',  'Chemistry','Biology','Maths']}
+
+subStats = pd.DataFrame(teacher)
+
+
+# print(final.loc[: , "Computer":"Maths"].mean())
+
+subStats["Average"] = list(final.loc[: , "Computer":"Maths"].mean())
+
+print(final[['Computer']].idxmax())
+print(final.index[final["Computer"]])
+print(subStats)
