@@ -36,3 +36,22 @@ for i in range(length):
     mail_content = '''Hi,
 
     I am your mark analyser. This mail contains the final marksheet and analysed data of the subject modules. PFA
+Regards, 
+    Mark Analyser'''
+    message.attach(MIMEText(mail_content, 'plain'))
+    filename = 'studentMarks.csv'
+ with open(filename, "rb") as attachment:
+ # MIME attachment is a binary file for that content type "application/octet-stream" is used
+        part = MIMEBase("application", "octet-stream")
+        part.set_payload(attachment.read())
+    encoders.encode_base64(part)
+
+ 
+
+    part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+
+ 
+
+ # attach the instance 'part' to instance 'message'
+
+    message.attach(part)
