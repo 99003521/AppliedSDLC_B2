@@ -91,11 +91,22 @@ for i in list_of_rows:
   f.write("\n")
 f.close()
 
+  subPy = pd.read_csv('dataset/Python.csv', delimiter=',')  
+  if i[0] in subPy.values:
+    temp_rows= [list(row) for row in subPy.values]
+    for row in temp_rows:
+      if i[0] in row:
+        t=temp_rows.index(row)
+        break
+    f.write(str(subPy.values[t][3])+",")
+  else:
+    f.write("NA,")
 
 
 data = pd.read_csv('results/studentMarks.csv', index_col=False)
 final = pd.DataFrame(data)
 print(final)
+
 # print(final["Physics"].mean())
 print(final.iloc[0,3:7].mean())
 print(final.iloc[0,0])
@@ -103,6 +114,7 @@ print(final.iloc[0,0])
 # display(final.iloc[0,0],final.iloc[0,3:8])
 for i in range(final.shape[0]):
   display(final.iloc[i,0],final.iloc[i,3:8])
+  
 # df["Average"] = final.iloc[0,3:final.shape[1]].mean()
 # print(df)
 col = final.loc[: , "Computer":"Maths"]
