@@ -19,14 +19,14 @@ Folder             | Description
 
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`99003521` | Aman Kalaskar  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`99003554` | Ragul Krishna P  | Feature C, D etc    | X No     | X No   |X No   |X No     
-`99003605` | Grace Joseph  | Feature C, D etc    | X No     | X No   |X No   |X No  
+`99003521` | Aman Kalaskar  | Data Consolidation   | 1     |1   |X No   |X No     
+`99003554` | Ragul Krishna P  | Data Analyser    | 2     | 2   |X No   |X No     
+`99003605` | Grace Joseph  | Email    | 1     | 1   |X no  |X No  
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
+1. In the Consolidation process we were unable to append the average of the modules and for resolving it we imported pandas for converting it to dataframe
+2. While working on the Email part we were facing 
 3. ...
 4. ...
 
