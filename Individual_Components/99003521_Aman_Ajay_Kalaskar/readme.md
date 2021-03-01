@@ -11,3 +11,4 @@
   - Creation of repository
   - Addition of testing and code quality metrics in workflows
   - Merging of the report
+  - Raised and closed issues
