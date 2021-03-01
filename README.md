@@ -1,7 +1,7 @@
 # SDLC Activity Based Learning
 # Marks Analyzer
 Visit [Pages for Report -optional](using github.io option)
-
+[Git Inspector](https://99003521.github.io/AppliedSDLC_B2/result)
 [![Git Inspector](https://github.com/99003521/AppliedSDLC_B2/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/99003521/AppliedSDLC_B2/actions/workflows/gitinspector.yml)
 
 
