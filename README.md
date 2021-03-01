@@ -2,9 +2,7 @@
 # Marks Analyzer
 Visit [Pages for Report -optional](using github.io option)
 
-[Git Inspector](using github.io option)
-------|----------|-------|--------------
-![Git Inspector](Badgelink)
+[![Git Inspector](https://github.com/99003521/AppliedSDLC_B2/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/99003521/AppliedSDLC_B2/actions/workflows/gitinspector.yml)
 
 
 ## Folder Structure
