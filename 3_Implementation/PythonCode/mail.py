@@ -28,7 +28,7 @@ for i in range(length):
 
     X = li[i]
     reciver_mail = X
- print(reciver_mail)
+    print(reciver_mail)
     message = MIMEMultipart()
     message['From'] = sender_address
     message['To'] =  reciver_mail             #  Pass Reciver Mail Address
@@ -39,8 +39,9 @@ for i in range(length):
 Regards, 
     Mark Analyser'''
     message.attach(MIMEText(mail_content, 'plain'))
-    filename = 'studentMarks.csv'
- with open(filename, "rb") as attachment:
+    filename = 'results/studentMarks.csv'
+
+    with open(filename, "rb") as attachment:
  # MIME attachment is a binary file for that content type "application/octet-stream" is used
         part = MIMEBase("application", "octet-stream")
         part.set_payload(attachment.read())
@@ -68,6 +69,4 @@ Regards,
 
     s.quit()
 
- 
-
- print('Mail Sent')
+    print('Mail Sent')
